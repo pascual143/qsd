@@ -1,0 +1,27 @@
+:root {
+    --fontTexto:  'Raleway', sans-serif;
+    --fontHeading: 'Staatliches', cursive;
+
+    /** Colores **/
+    --azul : #00487C;
+    --rojo : #A01C48;
+    --naranja : #F58549;
+    --amarillo: #ECA400;
+    --verde : rgb(20, 131, 20);
+
+    /** gris **/
+    --gris: #969696;
+    --grisOscuro : #707070;
+    --grisClaro: rgb(243, 243, 243);
+};
+
+div {
+    background-color: var(--grisClaro);
+    font-size: 1.6rem;
+    font-family: var(--fontTexto);
+}
+
+h1 {
+    font-family: var(--fontTexto);
+    
+}
