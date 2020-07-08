@@ -15,13 +15,14 @@
     --grisClaro: rgb(243, 243, 243);
 };
 
+/* ELEMENTS */
 div {
     background-color: var(--grisClaro);
     font-size: 1.6rem;
     font-family: var(--fontTexto);
-}
+};
 
 h1 {
     font-family: var(--fontTexto);
-    
-}
+};
+

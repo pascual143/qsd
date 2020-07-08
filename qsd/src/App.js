@@ -13,11 +13,9 @@ function App() {
   return (
     <Router>
       <Fragment>
-        <main>
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>
-        </main>
       </Fragment>
     </Router>
   );
