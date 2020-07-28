@@ -6,7 +6,7 @@ export default class Blog extends Component {
     return (
         <Fragment>
             <div>
-                <h1>Hola pascual</h1>
+                <h1>Blog</h1>
             </div>
         </Fragment>
     )

@@ -6,7 +6,7 @@ export default class Course extends Component {
     return (
         <Fragment>
             <div>
-                <h1>Hola pascual</h1>
+                <h1>Curso</h1>
             </div>
         </Fragment>
     )

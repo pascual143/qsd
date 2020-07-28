@@ -4,7 +4,7 @@
 
     /** Colores **/
     --azul : #00487C;
-    --rojo : #A01C48;
+    --rojo : #d93337;
     --naranja : #F58549;
     --amarillo: #ECA400;
     --verde : rgb(20, 131, 20);
@@ -25,4 +25,5 @@ div {
 h1 {
     font-family: var(--fontTexto);
 };
+
 
