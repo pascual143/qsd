@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
 import './layouts.css';
 
+
 export default class Nav extends Component {
 	render() {
 		return (
@@ -19,13 +20,13 @@ export default class Nav extends Component {
 							</a>
 							<ul className="left hide-on-med-and-down">
 								<li>
-									<Link to={"/"} >Home</Link>
+									<Link to={"/Home"} >Home</Link>
 								</li>
 								<li>
 									<Link to={"/Manual"}>Manual</Link>
 								</li>
 								<li>
-									<Link to={"/Curso"}>Curso</Link>
+									<Link to={"/Course"}>Curso</Link>
 								</li>
 								<li>
 									<Link to={"/Blog"}>Blog</Link>
