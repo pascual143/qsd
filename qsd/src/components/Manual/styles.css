@@ -1,6 +1,31 @@
 .cardHtml {
-    width: 40rem;
+    width: 75rem;
     float: none;
     margin: 0 auto;
     padding: 0;
+}
+
+.cardHtmlInside {
+    width: 65rem;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cardHtml2 {
+    width: 55rem;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.cardHtmlInside2 {
+    width: 15rem;
+    height: 15rem;
+    float: none;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.button {
+    margin: 10px;
 }
