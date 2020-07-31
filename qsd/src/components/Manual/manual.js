@@ -1,8 +1,11 @@
 import React, { Fragment, Component } from 'react';
 import IntroHtml from './Html/html';
+import IntroCss from './Css/css';
 
 // import bootstrap
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
 
 // import carousel
 import Slider from 'react-slick';
@@ -22,17 +25,24 @@ export default class Manual extends Component {
 		super(props);
 		this.next = this.next.bind(this);
 		this.previous = this.previous.bind(this);
+		this.IntroHtml = this.IntroHtml.bind(this);
+		this.IntroCss = this.IntroCss.bind(this);
 	}
-
+	IntroHtml() {
+		return <IntroHtml />;
+	}
+	IntroCss() {
+		return <IntroCss />;
+	}
 	next() {
 		this.slider.slickNext();
 	}
 	previous() {
 		this.slider.slickPrev();
 	}
-  handleClick = () => {
-    console.log(this, IntroHtml)
-  }
+	handleClick = () => {
+		console.log(this, IntroHtml);
+	};
 	render() {
 		const settings = {
 			dots: false,
@@ -51,7 +61,7 @@ export default class Manual extends Component {
 					{char}
 				</span>
 			);
-    }
+		}
 
 		return (
 			<Fragment>
@@ -67,15 +77,17 @@ export default class Manual extends Component {
 						{/* <button className="prevNextDotClassName">Next</button> */}
 						<div>
 							<Card className="cardHtmlInside2">
-                <button onClick={this.handleClick.IntroHtml}>
-							  	<img width="200" height="200" alt="que es html?" src={htmlpic} />
-                </button>
+								<Button href={'<IntroHtml />'} variant="secondary">
+										<img width="200" height="200" alt="que es html?" src={htmlpic} />
+								</Button>
 							</Card>
 						</div>
 						<div>
-							<Card className="cardHtmlInside2">
-								<img width="200" height="200" alt="que es html?" src={csspic} />
-							</Card>
+							<Button href={'<IntroCss />'}>
+								<Card className="cardHtmlInside2">
+										<img width="200" height="200" alt="que es css?" src={csspic} />
+								</Card>
+							</Button>
 						</div>
 						<div>
 							<Card className="cardHtmlInside2">
@@ -85,18 +97,18 @@ export default class Manual extends Component {
 						<div>
 							<Card className="cardHtmlInside2">
 								<img width="200" height="200" alt="que es html?" src={jquerypic} />
-							</Card>{' '}
+							</Card>
 						</div>
 						<div>
 							<Card className="cardHtmlInside2">
 								<img width="200" height="200" alt="que es html?" src={bootstrappic} />
-							</Card>{' '}
+							</Card>
 						</div>
 						<div>
 							<Card className="cardHtmlInside2">
-                <button>
-								<img width="200" height="200" alt="que es html?" src={reactpic} />
-                </button>
+								<button>
+									<img width="200" height="200" alt="que es html?" src={reactpic} />
+								</button>
 							</Card>{' '}
 						</div>
 					</Slider>

@@ -2,8 +2,8 @@ import React, { Fragment, Component } from 'react';
 import './../styles.css';
 // import './scripts.js';
 // Capitulos
-import QueEsHtml from './CapitulosHtml/queEsHtml.js';
-import AnatomiaHtml from './CapitulosHtml/anatomiaHtml.js';
+import QueEsCss from './CapitulosCss/queEsCss';
+// import AnatomiaHtml from './CapitulosHtml/anatomiaHtml.js';
 
 // bootstrap
 import Card from 'react-bootstrap/Card';
@@ -17,11 +17,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import MagicSliderDots from 'react-magic-slider-dots';
 import 'react-magic-slider-dots/dist/magic-dots.css';
 
-import './arrows.js';
-
 // import htmlpic from '../../../img/htmlpic.jpg';
 
-export default class IntroHtml extends Component {
+export default class IntroCss extends Component {
 	constructor(props) {
 		super(props);
 		this.next = this.next.bind(this);
@@ -108,7 +106,7 @@ export default class IntroHtml extends Component {
 								Next
 							</Button>
 							<Card className="cardHtmlInside">
-								<QueEsHtml />
+								<QueEsCss />
 							</Card>
 						</div>
 					</div>
@@ -120,7 +118,7 @@ export default class IntroHtml extends Component {
 							Next
 						</Button>
 						<Card className="cardHtmlInside">
-							<AnatomiaHtml />
+                            <h3>3</h3>
 						</Card>
 					</div>
 					<div>
@@ -174,7 +172,7 @@ export default class IntroHtml extends Component {
 	}
 }
 
-const title = <div>HTML</div>;
+const title = <div>CSS</div>;
 
 const recursosHtml = <div>Recursos</div>;
 
