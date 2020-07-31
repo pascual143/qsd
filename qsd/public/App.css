@@ -24,6 +24,7 @@ div {
 
 h1 {
     font-family: var(--fontTexto);
+    margin-top: 0;
 };
 
 

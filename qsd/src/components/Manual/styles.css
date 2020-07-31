@@ -1,3 +1,4 @@
+/* Cards Capitulos */
 .cardHtml {
     width: 75rem;
     float: none;
@@ -9,9 +10,11 @@
     width: 65rem;
     float: none;
     margin: 0 auto;
+    margin-top: 0;
     padding: 0;
 }
 
+/* Card Technologias */
 .cardHtml2 {
     width: 55rem;
     float: none;
@@ -26,6 +29,17 @@
     padding: 10px;
 }
 
-.button {
-    margin: 10px;
+/* Botones Prev y Next */
+.buttonPrev {
+    width: 100px;
+    height: 900px;
+    margin: 0 auto;
+    float: left;
+}
+
+.buttonNext {
+    width: 100px;
+    height: 900px;
+    margin: 0 auto;
+    float: right;
 }

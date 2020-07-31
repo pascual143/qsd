@@ -30,7 +30,9 @@ export default class Manual extends Component {
 	previous() {
 		this.slider.slickPrev();
 	}
-
+  handleClick = () => {
+    console.log(this, IntroHtml)
+  }
 	render() {
 		const settings = {
 			dots: false,
@@ -38,18 +40,19 @@ export default class Manual extends Component {
 			infinite: false,
 			speed: 500,
 			slidesToShow: 3,
-			slidesToScroll: 3
+			slidesToScroll: 2
 		};
 		function Arrow(props) {
 			let className = props.type === 'next' ? 'nextArrow' : 'prevArrow';
 			className += ' arrow';
-			const char = props.type === 'next' ? '👉' : '👈';
+			const char = props.type === 'next' ? '👉👉👉👉👉👉👉👉👉👉' : '👈👈👈👈👈👈👈👈👈👈';
 			return (
 				<span className={className} onClick={props.onClick}>
 					{char}
 				</span>
 			);
-		}
+    }
+
 		return (
 			<Fragment>
 				<div>
@@ -64,7 +67,9 @@ export default class Manual extends Component {
 						{/* <button className="prevNextDotClassName">Next</button> */}
 						<div>
 							<Card className="cardHtmlInside2">
-								<img width="200" height="200" alt="que es html?" src={htmlpic} />
+                <button onClick={this.handleClick.IntroHtml}>
+							  	<img width="200" height="200" alt="que es html?" src={htmlpic} />
+                </button>
 							</Card>
 						</div>
 						<div>
@@ -89,7 +94,9 @@ export default class Manual extends Component {
 						</div>
 						<div>
 							<Card className="cardHtmlInside2">
+                <button>
 								<img width="200" height="200" alt="que es html?" src={reactpic} />
+                </button>
 							</Card>{' '}
 						</div>
 					</Slider>
