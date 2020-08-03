@@ -11,7 +11,6 @@ class QueEsCss extends Component {
 							<meta charSet="utf-8" />
 							<title>Duddle</title>
 							<title>Que es Css ?</title>
-							{/* <link rel="canonical" href="http://mysite.com/example" /> */}
 						</Helmet>
 					</div>
 					<div>

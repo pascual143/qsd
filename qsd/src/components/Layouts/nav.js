@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import './layouts.css';
+import CardImg from 'react-bootstrap/esm/CardImg';
 
 
 export default class Nav extends Component {
@@ -11,7 +12,7 @@ export default class Nav extends Component {
 			<Fragment>
 				<div>
 					<nav>
-						<div className="nav-wrapper rojo">
+						<div className="nav-wrapper naranja">
 							<a href="#!" className="center brand-logo">
 								Duddle
 							</a>
@@ -23,10 +24,16 @@ export default class Nav extends Component {
 									<Link to={"/Home"} >Home</Link>
 								</li>
 								<li>
+									<Link to={"/Course"}>Curso</Link>
+								</li>
+								<li>
 									<Link to={"/Manual"}>Manual</Link>
 								</li>
 								<li>
-									<Link to={"/Course"}>Curso</Link>
+									<Link to={"/Recursos"}>Recursos</Link>
+								</li>
+								<li>
+									<Link to={"/Ejercicios"}>Ejercicios</Link>
 								</li>
 								<li>
 									<Link to={"/Blog"}>Blog</Link>
@@ -35,12 +42,12 @@ export default class Nav extends Component {
 									<Link to={"/Otros"}>Otros</Link>
 								</li>
 								<li>
-									<a
+									<div
 										href="#!"
-										className="fixed-action-btn btn-floating btn-large halfway-fab waves-effect waves-light teal"
+										// className="fixed-action-btn btn-floating btn-large halfway-fab waves-effect waves-light card-image teal"
 									>
-										<i className="material-icons">add</i>
-									</a>{' '}
+										<img  src="./../../img/pugBlue.jpg"/>
+									</div>
 								</li>
 							</ul>
 						</div>

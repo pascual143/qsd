@@ -3,11 +3,11 @@
     --fontHeading: 'Staatliches', cursive;
 
     /** Colores **/
-    --azul : #00487C;
+    --azul : #2EC4B6;
     --rojo : #d93337;
-    --naranja : #F58549;
-    --amarillo: #ECA400;
-    --verde : rgb(20, 131, 20);
+    --naranja : #FFE66D;
+    --blanco: #F7FFF7;
+    --negro : #011627;
 
     /** gris **/
     --gris: #969696;
@@ -17,7 +17,7 @@
 
 /* ELEMENTS */
 div {
-    background-color: var(--grisClaro);
+    background-color: var(--rojo);
     font-size: 1.6rem;
     font-family: var(--fontTexto);
 };

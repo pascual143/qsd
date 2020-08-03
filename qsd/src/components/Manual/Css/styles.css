@@ -17,6 +17,7 @@
 /* Card Technologias */
 .cardHtml2 {
     width: 55rem;
+    height: 355rem;
     float: none;
     margin: 0 auto;
     padding: 0;
@@ -45,6 +46,20 @@
 .buttonNext {
     width: 100px;
     height: 900px;
+    margin: 0 auto;
+    float: right;
+}
+
+.btnPrevTop {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    float: left;
+}
+
+.btnNextTop {
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     float: right;
 }
